@@ -9,8 +9,16 @@ import os
 from pathlib import Path
 from typing import Optional, Dict, Any, List
 from dataclasses import dataclass
-from web3 import Web3
-from eth_account import Account
+
+# Optional Web3 - simulation mode works without it
+try:
+    from web3 import Web3
+    from eth_account import Account
+    WEB3_AVAILABLE = True
+except ImportError:
+    WEB3_AVAILABLE = False
+    Web3 = None
+    Account = None
 
 @dataclass
 class SoulData:
@@ -82,28 +90,38 @@ class SoulMarketplaceAdapter:
         
         # Initialize Web3
         self.rpc_url = rpc_url or self.config.get('rpc_url', 'https://sepolia.base.org')
-        self.w3 = Web3(Web3.HTTPProvider(self.rpc_url))
         
-        if not self.w3.is_connected():
-            print(f"⚠️  Could not connect to {self.rpc_url}")
+        if WEB3_AVAILABLE:
+            self.w3 = Web3(Web3.HTTPProvider(self.rpc_url))
+            
+            if not self.w3.is_connected():
+                print(f"⚠️  Could not connect to {self.rpc_url}")
+                print("   Running in simulation mode")
+                self.simulation_mode = True
+            else:
+                self.simulation_mode = False
+                print(f"✅ Connected to {self.rpc_url}")
+                print(f"   Chain ID: {self.w3.eth.chain_id}")
+                print(f"   Block: {self.w3.eth.block_number}")
+        else:
+            print(f"⚠️  Web3 not installed (pip install web3)")
             print("   Running in simulation mode")
             self.simulation_mode = True
-        else:
-            self.simulation_mode = False
-            print(f"✅ Connected to {self.rpc_url}")
-            print(f"   Chain ID: {self.w3.eth.chain_id}")
-            print(f"   Block: {self.w3.eth.block_number}")
+            self.w3 = None
         
         # Initialize account
         self.private_key = private_key or os.getenv('AGENT_PRIVATE_KEY')
-        if self.private_key:
+        if self.private_key and WEB3_AVAILABLE and Account:
             self.account = Account.from_key(self.private_key)
             self.address = self.account.address
             print(f"✅ Account loaded: {self.address}")
         else:
             self.account = None
             self.address = None
-            print("⚠️  No private key - read-only mode")
+            if not WEB3_AVAILABLE:
+                print("⚠️  Web3 not installed - read-only mode")
+            else:
+                print("⚠️  No private key - read-only mode")
         
         # Initialize contracts
         self._init_contracts()
@@ -158,8 +176,11 @@ class SoulMarketplaceAdapter:
         if self.simulation_mode:
             return self.simulation_state['balances'].get(addr, 0.0)
         
-        balance_wei = self.w3.eth.get_balance(Web3.to_checksum_address(addr))
-        return self.w3.from_wei(balance_wei, 'ether')
+        if self.w3:
+            balance_wei = self.w3.eth.get_balance(self.w3.to_checksum_address(addr))
+            return self.w3.from_wei(balance_wei, 'ether')
+        
+        return 0.0
     
     def mint_soul(self, soul_data: Dict[str, Any], cid: str, soul_hash: str) -> Optional[int]:
         """
