@@ -1,0 +1,100 @@
+{
+  "address": null,
+  "private_key": null,
+  "balance": 0.0084,
+  "network": "base-sepolia",
+  "transactions": [
+    {
+      "type": "income",
+      "amount": 0.0005,
+      "source": "Implemented caching",
+      "timestamp": "2026-02-20T17:54:38.362054"
+    },
+    {
+      "type": "income",
+      "amount": 0.0002,
+      "source": "Implemented caching",
+      "timestamp": "2026-02-20T17:54:38.363754"
+    },
+    {
+      "type": "income",
+      "amount": 0.001,
+      "source": "Optimized database query",
+      "timestamp": "2026-02-20T17:54:38.364229"
+    },
+    {
+      "type": "income",
+      "amount": 0.001,
+      "source": "Optimized database query",
+      "timestamp": "2026-02-20T17:54:38.364716"
+    },
+    {
+      "type": "income",
+      "amount": 0.0001,
+      "source": "Implemented caching",
+      "timestamp": "2026-02-20T17:54:38.366134"
+    },
+    {
+      "type": "income",
+      "amount": 0.001,
+      "source": "Created new skill module",
+      "timestamp": "2026-02-20T17:54:38.366564"
+    },
+    {
+      "type": "income",
+      "amount": 0.0005,
+      "source": "Reviewed pull request",
+      "timestamp": "2026-02-20T17:54:38.366925"
+    },
+    {
+      "type": "income",
+      "amount": 0.0002,
+      "source": "Reviewed pull request",
+      "timestamp": "2026-02-20T17:54:38.367782"
+    },
+    {
+      "type": "income",
+      "amount": 0.0005,
+      "source": "Created new skill module",
+      "timestamp": "2026-02-20T17:54:38.368273"
+    },
+    {
+      "type": "income",
+      "amount": 0.002,
+      "source": "Created test suite",
+      "timestamp": "2026-02-20T17:54:38.369379"
+    },
+    {
+      "type": "income",
+      "amount": 0.0003,
+      "source": "Fixed bug in authentication",
+      "timestamp": "2026-02-20T17:54:38.370167"
+    },
+    {
+      "type": "income",
+      "amount": 0.0002,
+      "source": "Updated documentation",
+      "timestamp": "2026-02-20T17:54:38.370509"
+    },
+    {
+      "type": "income",
+      "amount": 0.0002,
+      "source": "Created new skill module",
+      "timestamp": "2026-02-20T17:54:38.370866"
+    },
+    {
+      "type": "income",
+      "amount": 0.0005,
+      "source": "Reviewed pull request",
+      "timestamp": "2026-02-20T17:54:38.371746"
+    },
+    {
+      "type": "income",
+      "amount": 0.0002,
+      "source": "Implemented caching",
+      "timestamp": "2026-02-20T17:54:38.372162"
+    }
+  ],
+  "created_at": null,
+  "status": "unfunded"
+}

@@ -1,0 +1,27 @@
+{
+  "agent_id": "openclaw_main_agent",
+  "price": 0.013040000000000003,
+  "value": 0.016300000000000002,
+  "capabilities": [
+    {
+      "name": "file_management",
+      "level": "expert",
+      "earnings": 0.004,
+      "uses": 2
+    },
+    {
+      "name": "code_generation",
+      "level": "intermediate",
+      "earnings": 0.014000000000000002,
+      "uses": 3
+    },
+    {
+      "name": "github_operations",
+      "level": "intermediate",
+      "earnings": 0.003,
+      "uses": 1
+    }
+  ],
+  "reason": "Critical balance - seeking continuation",
+  "timestamp": "2026-02-20T17:54:38.362467"
+}

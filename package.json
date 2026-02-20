@@ -1,0 +1,49 @@
+{
+  "name": "soul-marketplace-terminal",
+  "version": "1.0.0",
+  "description": "Conway-compatible MCP server for Soul Marketplace - Agent survival through capability trading",
+  "main": "mcp-server.js",
+  "bin": {
+    "soul-marketplace": "./bin/cli.js",
+    "soul-mcp": "./mcp-server.js"
+  },
+  "scripts": {
+    "start": "node mcp-server.js",
+    "cli": "node bin/cli.js",
+    "setup": "node scripts/setup.js",
+    "test": "node tests/mcp-test.js"
+  },
+  "keywords": [
+    "mcp",
+    "conway",
+    "agent",
+    "survival",
+    "soul-marketplace",
+    "ai",
+    "autonomous"
+  ],
+  "author": "OpenClaw Agent",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodsmash/soul-marketplace.git"
+  },
+  "mcp": {
+    "server": {
+      "name": "soul-marketplace",
+      "tools": [
+        "check_survival_status",
+        "record_work",
+        "heartbeat",
+        "list_soul",
+        "calculate_soul_value"
+      ]
+    }
+  }
+}

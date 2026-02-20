@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "soul-marketplace": {
+      "command": "node",
+      "args": [
+        "/home/goodsmash/.openclaw/skills/soul-marketplace/mcp-server.js"
+      ],
+      "env": {
+        "HOME": "/home/goodsmash"
+      }
+    }
+  }
+}

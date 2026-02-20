@@ -1,0 +1,146 @@
+{
+  "heartbeats": 12,
+  "history": [
+    {
+      "heartbeat": 1,
+      "tier": "CRITICAL",
+      "balance": 0.0,
+      "action": "listed_soul",
+      "timestamp": "2026-02-20T17:51:50.381549",
+      "listing": {
+        "agent_id": "openclaw_main_agent",
+        "price": 0.008,
+        "value": 0.01,
+        "capabilities": [
+          {
+            "name": "file_management",
+            "level": "expert",
+            "earnings": 0.0,
+            "uses": 0
+          },
+          {
+            "name": "code_generation",
+            "level": "intermediate",
+            "earnings": 0.0,
+            "uses": 0
+          },
+          {
+            "name": "github_operations",
+            "level": "intermediate",
+            "earnings": 0.0,
+            "uses": 0
+          }
+        ],
+        "reason": "Critical balance - seeking continuation",
+        "timestamp": "2026-02-20T17:51:50.381561"
+      }
+    },
+    {
+      "heartbeat": 2,
+      "tier": "LOW",
+      "balance": 0.002,
+      "action": "conservation_mode",
+      "timestamp": "2026-02-20T17:52:17.016361"
+    },
+    {
+      "heartbeat": 3,
+      "tier": "LOW",
+      "balance": 0.007,
+      "action": "conservation_mode",
+      "timestamp": "2026-02-20T17:52:17.016611"
+    },
+    {
+      "heartbeat": 4,
+      "tier": "NORMAL",
+      "balance": 0.01,
+      "action": "normal_operations",
+      "timestamp": "2026-02-20T17:52:17.016838",
+      "available_souls": 0
+    },
+    {
+      "heartbeat": 5,
+      "tier": "NORMAL",
+      "balance": 0.018000000000000002,
+      "action": "normal_operations",
+      "timestamp": "2026-02-20T17:52:17.017155",
+      "available_souls": 0
+    },
+    {
+      "heartbeat": 6,
+      "tier": "NORMAL",
+      "balance": 0.020000000000000004,
+      "action": "normal_operations",
+      "timestamp": "2026-02-20T17:52:17.017371",
+      "available_souls": 0
+    },
+    {
+      "heartbeat": 7,
+      "tier": "THRIVING",
+      "balance": 0.15,
+      "action": "expansion_mode",
+      "timestamp": "2026-02-20T17:52:17.017566"
+    },
+    {
+      "heartbeat": 8,
+      "tier": "CRITICAL",
+      "balance": 0.0005,
+      "action": "listed_soul",
+      "timestamp": "2026-02-20T17:54:38.362454",
+      "listing": {
+        "agent_id": "openclaw_main_agent",
+        "price": 0.013040000000000003,
+        "value": 0.016300000000000002,
+        "capabilities": [
+          {
+            "name": "file_management",
+            "level": "expert",
+            "earnings": 0.0042,
+            "uses": 3
+          },
+          {
+            "name": "code_generation",
+            "level": "intermediate",
+            "earnings": 0.016000000000000004,
+            "uses": 5
+          },
+          {
+            "name": "github_operations",
+            "level": "intermediate",
+            "earnings": 0.0043,
+            "uses": 3
+          }
+        ],
+        "reason": "Critical balance - seeking continuation",
+        "timestamp": "2026-02-20T17:54:38.362467"
+      }
+    },
+    {
+      "heartbeat": 9,
+      "tier": "LOW",
+      "balance": 0.0027,
+      "action": "conservation_mode",
+      "timestamp": "2026-02-20T17:54:38.365033"
+    },
+    {
+      "heartbeat": 10,
+      "tier": "LOW",
+      "balance": 0.0043,
+      "action": "conservation_mode",
+      "timestamp": "2026-02-20T17:54:38.367128"
+    },
+    {
+      "heartbeat": 11,
+      "tier": "LOW",
+      "balance": 0.006999999999999999,
+      "action": "conservation_mode",
+      "timestamp": "2026-02-20T17:54:38.369613"
+    },
+    {
+      "heartbeat": 12,
+      "tier": "LOW",
+      "balance": 0.0076999999999999985,
+      "action": "conservation_mode",
+      "timestamp": "2026-02-20T17:54:38.370985"
+    }
+  ]
+}

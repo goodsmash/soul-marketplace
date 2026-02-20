@@ -1,0 +1,166 @@
+{
+  "entries": [
+    {
+      "timestamp": "2026-02-20T17:52:46.699050",
+      "type": "skill_create",
+      "description": "Created Soul Marketplace skill",
+      "value": 0.005,
+      "capability": "skill_development"
+    },
+    {
+      "timestamp": "2026-02-20T17:52:46.733957",
+      "type": "code_generate",
+      "description": "Built typing assistant GUI",
+      "value": 0.001,
+      "capability": "code_generation"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:27.036904",
+      "type": "cron_setup",
+      "description": "Added error handling",
+      "value": 0.0005,
+      "capability": "system_admin"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.361449",
+      "type": "cron_setup",
+      "description": "Implemented caching",
+      "value": 0.0005,
+      "capability": "system_admin"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.363034",
+      "type": "system_admin",
+      "description": "Survival action: listed_soul (CRITICAL tier)",
+      "value": 0.0001,
+      "capability": "general"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.363274",
+      "type": "session_manage",
+      "description": "Implemented caching",
+      "value": 0.0002,
+      "capability": "communication"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.363820",
+      "type": "code_generate",
+      "description": "Optimized database query",
+      "value": 0.001,
+      "capability": "code_generation"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.364301",
+      "type": "code_generate",
+      "description": "Optimized database query",
+      "value": 0.001,
+      "capability": "code_generation"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.365226",
+      "type": "system_admin",
+      "description": "Survival action: conservation_mode (LOW tier)",
+      "value": 0.0001,
+      "capability": "general"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.365601",
+      "type": "web_fetch",
+      "description": "Implemented caching",
+      "value": 0.0001,
+      "capability": "research"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.366206",
+      "type": "pr_create",
+      "description": "Created new skill module",
+      "value": 0.001,
+      "capability": "github_operations"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.366634",
+      "type": "cron_setup",
+      "description": "Reviewed pull request",
+      "value": 0.0005,
+      "capability": "system_admin"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.367235",
+      "type": "system_admin",
+      "description": "Survival action: conservation_mode (LOW tier)",
+      "value": 0.0001,
+      "capability": "general"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.367396",
+      "type": "file_write",
+      "description": "Reviewed pull request",
+      "value": 0.0002,
+      "capability": "file_management"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.367841",
+      "type": "cron_setup",
+      "description": "Created new skill module",
+      "value": 0.0005,
+      "capability": "system_admin"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.368402",
+      "type": "agent_spawn",
+      "description": "Created test suite",
+      "value": 0.002,
+      "capability": "agent_management"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.369724",
+      "type": "system_admin",
+      "description": "Survival action: conservation_mode (LOW tier)",
+      "value": 0.0001,
+      "capability": "general"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.369860",
+      "type": "git_commit",
+      "description": "Fixed bug in authentication",
+      "value": 0.0003,
+      "capability": "github_operations"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.370236",
+      "type": "web_search",
+      "description": "Updated documentation",
+      "value": 0.0002,
+      "capability": "research"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.370577",
+      "type": "session_manage",
+      "description": "Created new skill module",
+      "value": 0.0002,
+      "capability": "communication"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.371091",
+      "type": "system_admin",
+      "description": "Survival action: conservation_mode (LOW tier)",
+      "value": 0.0001,
+      "capability": "general"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.371242",
+      "type": "cron_setup",
+      "description": "Reviewed pull request",
+      "value": 0.0005,
+      "capability": "system_admin"
+    },
+    {
+      "timestamp": "2026-02-20T17:54:38.371827",
+      "type": "session_manage",
+      "description": "Implemented caching",
+      "value": 0.0002,
+      "capability": "communication"
+    }
+  ],
+  "total_value": 0.015400000000000004
+}
